@@ -54,21 +54,21 @@
       st. dev. \code{sn} times Cauchy log-likelihood of \code{x} with
       mode parameter \code{mu+y}.}
     \item{smtfcauchy}{integral of \code{flikcauchy} with \code{y}
-      running from \code{-Inf} tp \code{Inf}.}
+      running from \code{-Inf} to \code{Inf}.}
     \item{smcipsi}{\code{psicauchy(x-y)*dnorm(y,sd=sn)}.}
     \item{smcipsid}{derivative of \code{smcipsi} w.r.t. \code{x}.}
     \item{smcpsi}{psi-function for smoothed Cauchy
       ML-estimator. Integral of \code{smpcipsi} with \code{y}
-      running from \code{-Inf} tp \code{Inf}.}
+      running from \code{-Inf} to \code{Inf}.}
     \item{smcpsid}{integral of \code{smpcipsid} with \code{y}
-      running from \code{-Inf} tp \code{Inf}.}
+      running from \code{-Inf} to \code{Inf}.}
     \item{smbpsi}{\code{(x-y)*psi.bisquare(x-y,c=k)*dnorm(y,sd=sn)}.}
     \item{smbpsid}{\code{psi.bisquare(x-y,c=k,deriv=1)*dnorm(y,sd=sn)}.}
     \item{smbpsii}{psi-function for smoothed bisquare
       M-estimator. Integral of \code{smbpsi} with \code{y}
-      running from \code{-Inf} tp \code{Inf}.}
+      running from \code{-Inf} to \code{Inf}.}
     \item{smbpsidi}{integral of \code{smbpsid} with \code{y}
-      running from \code{-Inf} tp \code{Inf}.}
+      running from \code{-Inf} to \code{Inf}.}
     \item{smpsi}{psi-function for smoothed Huber-estimator at \code{x}.}
     \item{smpmed}{psi-function for smoothed median at \code{x}.}
   }
