@@ -71,12 +71,12 @@ smcpsid <- function(x, sn=sqrt(2/length(x))){
 
 
 smbpsi <- function(y, x, k=4.685, sn=sqrt(2/length(x))){
-  require(MASS)
+#  require(MASS)
   (x-y)*psi.bisquare(x-y,c=k)*dnorm(y,sd=sn)
 }
 
 smbpsid <- function(y, x, k=4.685, sn=sqrt(2/length(x))){
-  require(MASS)
+#  require(MASS)
   psi.bisquare(x-y,c=k,deriv=1)*dnorm(y,sd=sn)
 }
 
@@ -96,7 +96,7 @@ smbpsidi <- function(x, k=4.685, sn=sqrt(2/length(x))){
 
 mbisquare <- function (y, k=4.685, tol = 1e-06, s=mad(y), init="median") 
 {
-    require(MASS)
+#    require(MASS)
     y <- y[!is.na(y)]
     n <- length(y)
     if (init=="median")

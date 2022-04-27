@@ -8,3 +8,6 @@ exportPattern(".")
 import(
   MASS
 )
+
+importFrom("stats", "dcauchy", "dnorm", "integrate", "mad", "median",
+             "pnorm", "rexp", "runif")
